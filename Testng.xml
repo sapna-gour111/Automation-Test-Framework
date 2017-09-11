@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hitachi ServiceNow Automation Suite">
+	<test name="OrderGuideTest - English Language">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="Language" value="English"></parameter>
+
+
+		<classes>
+			<!-- <class name="com.servicenow.testscripts.CreateIncidentTest" /> <class 
+				name="com.servicenow.testscripts.IncidentModulesTest" /> <class name="com.servicenow.testscripts.ServiceOutageTest" 
+				/> <class name="com.servicenow.testscripts.IncidentStateChangeTest" /> <class 
+				name="com.servicenow.testscripts.SelfServiceTest" /> <class name="com.servicenow.testscripts.CustomerContactTest" 
+				/> <class name="com.servicenow.testscripts.ValidateDefaultImpactUrgencyPriorityValuesTest" 
+				/> -->
+			<!-- <class name="com.servicenow.testscripts.OrderGuidesTest" /> -->
+		</classes>
+	</test>
+	<test name="OrderGuideTest - Japanese Language">
+		<parameter name="Language" value="English"></parameter>
+		<classes>
+			<class name="com.servicenow.testscripts.OrderGuidesTest" />
+		</classes>
+	</test>
+</suite>

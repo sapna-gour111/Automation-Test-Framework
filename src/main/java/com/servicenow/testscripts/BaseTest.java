@@ -74,7 +74,7 @@ public class BaseTest {
 		reporter.test = test;
 	}
 
-	//@AfterMethod
+	@AfterMethod
 	public void afterEachTest(ITestResult result, Method method) {
 		ComplexReportFactory.closeTest(driver, method.getDeclaringClass().getSimpleName() + " : " + method.getName());
 	}
@@ -82,7 +82,7 @@ public class BaseTest {
 	/**
 	 * This method is used to close all the browsers opened by web driver.
 	 */
-	//@AfterClass
+	@AfterClass
 	public void tearDown() {
 		EventFiringWebDriver driver = LocalDriverManager.getDriver();
 		if (driver != null) {
@@ -95,7 +95,7 @@ public class BaseTest {
 	 * This method is used to close the report and it is used to close all
 	 * browsers opened by web driver.
 	 */
-	//@AfterSuite
+	@AfterSuite
 	public void afterSuiteExecution() {
 		logger.info("Quiting driver");
 		ComplexReportFactory.closeReport();

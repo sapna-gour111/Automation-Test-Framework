@@ -91,6 +91,18 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//*[@title='Open - Unassigned - Fast']")
 	private WebElement openUnAssiToMeFast_Btn;
 
+	// Open Un assigned to me - Full
+	@FindBy(xpath = "//*[@title='Open - Unassigned - Full']")
+	private WebElement openUnAssiToMeFull_Btn;
+
+	// Open groups Un assigned to me - Full
+	@FindBy(xpath = "//*[@title='My Groups - Unassigned - Full']")
+	private WebElement openGroupUnAssiToMeFast_Btn;
+
+	// Open groups Un assigned to me - Fast
+	@FindBy(xpath = "//*[@title='My Groups - Unassigned - Fast']")
+	private WebElement openGroupUnAssiToMeFull_Btn;
+
 	// Open New
 	@FindBy(xpath = "//*[@title='Fast View']")
 	private WebElement openIncidentFast_Btn;
@@ -402,6 +414,45 @@ public class HomePage extends BasePage {
 		switchToDefaultContent();
 		expandTopMenu("Incident");
 		openUnAssiToMeFast_Btn.click();
+		closeAlert();
+		synchronize();
+	}
+
+	public void clickOnOpenUnAssignedToMeFull_Button() throws InterruptedException {
+		logger.info("Clicking on OPen UnAssigned to me - Full button");
+		/**
+		 * This method is to switch to default i-frame and it is being called
+		 * from IFrameBase class.
+		 */
+		switchToDefaultContent();
+		expandTopMenu("Incident");
+		openUnAssiToMeFull_Btn.click();
+		closeAlert();
+		synchronize();
+	}
+
+	public void clickOnMyGroupUnAssignedFast_Button() throws InterruptedException {
+		logger.info("Clicking on OPen Groups UnAssigned to me - Fast button");
+		/**
+		 * This method is to switch to default i-frame and it is being called
+		 * from IFrameBase class.
+		 */
+		switchToDefaultContent();
+		expandTopMenu("Incident");
+		openGroupUnAssiToMeFast_Btn.click();
+		closeAlert();
+		synchronize();
+	}
+
+	public void clickOnOpenGroupsUnAssignedFull_Button() throws InterruptedException {
+		logger.info("Clicking on OPen Groups UnAssigned - Full button");
+		/**
+		 * This method is to switch to default i-frame and it is being called
+		 * from IFrameBase class.
+		 */
+		switchToDefaultContent();
+		expandTopMenu("Incident");
+		openGroupUnAssiToMeFull_Btn.click();
 		closeAlert();
 		synchronize();
 	}

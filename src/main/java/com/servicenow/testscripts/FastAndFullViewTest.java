@@ -40,11 +40,12 @@ public class FastAndFullViewTest extends BaseTest {
 	 * Views : Test Case No-1. Verify modules available under fast view module
 	 * 
 	 */
+
 	@Test(priority = 1)
 	public void verifyAvailableModulesForFastView() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("********************************");
 		logger.info("SelfServiceTest - verifyAvailableModulesForSelfService");
-		logger.info("*********************************");
+		logger.info("********************************");
 		homepg.expandTopMenu("Incident");
 		homepg.expandTopMenu("Fast View");
 
@@ -77,11 +78,12 @@ public class FastAndFullViewTest extends BaseTest {
 	 * Views : Test Case No-2. Verify modules available under full view module
 	 * 
 	 */
+
 	@Test(priority = 2)
 	public void verifyAvailableModulesForFullView() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("********************************");
 		logger.info("SelfServiceTest - verifyAvailableModulesForFullView");
-		logger.info("*********************************");
+		logger.info("********************************");
 		homepg.expandTopMenu("Incident");
 		homepg.expandTopMenu("Fast View");
 
@@ -114,11 +116,12 @@ public class FastAndFullViewTest extends BaseTest {
 	 * Views :Test Case No-3. Verify fields available under fast view module
 	 * 
 	 */
+
 	@Test(priority = 3)
 	public void verifyFastViewForIncCreation() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("*******************************");
 		logger.info("SelfServiceTest - verifyFastViewForIncCreation");
-		logger.info("*********************************");
+		logger.info("********************************");
 		homepg.expandTopMenu("Incident");
 		homepg.expandTopMenu("Fast View");
 
@@ -163,14 +166,16 @@ public class FastAndFullViewTest extends BaseTest {
 	}
 
 	/**
-	 * Views :Test Case No-4. Verify fields available under full view module
+	 * Views:
 	 * 
+	 * Test Case No-4. Verify fields available under full view module
 	 */
 	@Test(priority = 4)
+
 	public void verifyFullViewForIncCreation() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("********************************");
 		logger.info("SelfServiceTest - verifyFullViewForIncCreation");
-		logger.info("*********************************");
+		logger.info("********************************");
 		homepg.expandTopMenu("Incident");
 		homepg.expandTopMenu("Full View");
 
@@ -219,11 +224,12 @@ public class FastAndFullViewTest extends BaseTest {
 	 * Views :Test Case No-5. Verify Incident creation for Fast View.
 	 * 
 	 */
+
 	@Test(priority = 5)
 	public void verifyIncidentCreationForFastView() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("*******************************");
 		logger.info("SelfServiceTest - verifyIncidentCreationForFastView");
-		logger.info("*********************************");
+		logger.info("*******************************");
 		homepg.expandTopMenu("Incident");
 		homepg.expandTopMenu("Fast View");
 
@@ -261,13 +267,13 @@ public class FastAndFullViewTest extends BaseTest {
 
 	/**
 	 * Views :Test Case No-6. Verify Open Incident for Fast View.
-	 * 
 	 */
+
 	@Test(priority = 6, dependsOnMethods = "verifyIncidentCreationForFastView")
 	public void verifyOpenIncidentForFastView() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("********************************");
 		logger.info("SelfServiceTest - verifyOpenIncidentForFastView");
-		logger.info("*********************************");
+		logger.info("********************************");
 
 		homepg.clickOnOpenIncidentFast_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -313,14 +319,14 @@ public class FastAndFullViewTest extends BaseTest {
 	}
 
 	/**
-	 * Views :Test Case No-7. Verify Assigned to me - Fast View.
-	 * 
+	 * Views: Test Case No-7. Verify Assigned to me- Fast View.
 	 */
+
 	@Test(priority = 7, dependsOnMethods = "verifyIncidentCreationForFastView")
 	public void verifyAssignedToMeForFastView() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("********************************");
 		logger.info("SelfServiceTest - verifyAssignedToMeForFastView");
-		logger.info("*********************************");
+		logger.info("********************************");
 
 		homepg.clickOnAssignedToMeFast_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -371,11 +377,12 @@ public class FastAndFullViewTest extends BaseTest {
 	 * Views :Test Case No-8. Verify Open - Unassigned - Fast.
 	 * 
 	 */
+
 	@Test(priority = 8)
 	public void verifyOpenUnassignedForFastView() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("*******************************");
 		logger.info("SelfServiceTest - verifyOpenUnassignedForFastView");
-		logger.info("*********************************");
+		logger.info("********************************");
 
 		homepg.expandTopMenu("Incident");
 		homepg.expandTopMenu("Fast View");
@@ -451,9 +458,9 @@ public class FastAndFullViewTest extends BaseTest {
 	 */
 	@Test(priority = 9, dependsOnMethods = "verifyIncidentCreationForFastView")
 	public void verifyMyGroupsFastView() throws InterruptedException {
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 		logger.info("SelfServiceTest - verifyMyGroupsFastView");
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 
 		homepg.clickOnMyGroupsFast_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -500,13 +507,13 @@ public class FastAndFullViewTest extends BaseTest {
 
 	/**
 	 * Views :Test Case No-10. Verify All - Fast module.
-	 * 
 	 */
+
 	@Test(priority = 10, dependsOnMethods = "verifyIncidentCreationForFastView")
 	public void verifyAllFastView() throws InterruptedException {
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 		logger.info("SelfServiceTest - verifyAllFastView");
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 
 		homepg.clickOnAllFast_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -555,12 +562,13 @@ public class FastAndFullViewTest extends BaseTest {
 	 * Views :Test Case No-11. Verify Resolved - Fast module.
 	 * 
 	 */
+
 	@Test(priority = 11, dependsOnMethods = "verifyIncidentCreationForFastView")
 	public void verifyResolvedFastView() throws InterruptedException {
 
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 		logger.info("SelfServiceTest - verifyResolvedFastView");
-		logger.info("**********************************************");
+		logger.info("********************************************");
 
 		homepg.clickOnOpenIncidentFast_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -627,13 +635,13 @@ public class FastAndFullViewTest extends BaseTest {
 
 	/**
 	 * Views :Test Case No-12. Verify Closed - Fast module.
-	 * 
 	 */
+
 	@Test(priority = 12, dependsOnMethods = "verifyResolvedFastView")
 	public void verifyClosedFastView() throws InterruptedException {
-		logger.info("**********************************************");
+		logger.info("********************************************");
 		logger.info("SelfServiceTest - verifyClosedFastView");
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 
 		homepg.clickOnResolvedFast_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -691,13 +699,13 @@ public class FastAndFullViewTest extends BaseTest {
 
 	/**
 	 * Views :Test Case No-13. Verify Incident creation for Full View.
-	 * 
 	 */
+
 	@Test(priority = 13)
 	public void verifyIncidentCreationForFullView() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("*******************************");
 		logger.info("SelfServiceTest - verifyIncidentCreationForFullView");
-		logger.info("*********************************");
+		logger.info("********************************");
 		homepg.expandTopMenu("Incident");
 		homepg.expandTopMenu("Full View");
 
@@ -770,13 +778,13 @@ public class FastAndFullViewTest extends BaseTest {
 
 	/**
 	 * Views :Test Case No-14. Verify Open Incident for Full View.
-	 * 
 	 */
+
 	@Test(priority = 14, dependsOnMethods = "verifyIncidentCreationForFullView")
 	public void verifyOpenIncidentForFullView() throws InterruptedException {
-		logger.info("*********************************");
+		logger.info("*************************");
 		logger.info("SelfServiceTest - verifyOpenIncidentForFullView");
-		logger.info("*********************************");
+		logger.info("*****************************");
 
 		homepg.clickOnOpenIncidentFull_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -825,14 +833,14 @@ public class FastAndFullViewTest extends BaseTest {
 	}
 
 	/**
-	 * Views :Test Case No-15. Verify Assigned to me - Full View.
-	 * 
+	 * Views :Test Case No-15. Verify Assigned to me - Full
 	 */
+
 	@Test(priority = 15, dependsOnMethods = "verifyIncidentCreationForFullView")
 	public void verifyAssignedToMeForFullView() throws InterruptedException {
-		logger.info("**************************************************");
+		logger.info("*************************************************");
 		logger.info("SelfServiceTest - verifyAssignedToMeForFullView");
-		logger.info("***************************************************");
+		logger.info("*************************************************");
 
 		homepg.clickOnAssignedToMeFull_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -884,13 +892,13 @@ public class FastAndFullViewTest extends BaseTest {
 
 	/**
 	 * Views :Test Case No-16. Verify My Groups - Full module.
-	 * 
 	 */
+
 	@Test(priority = 16, dependsOnMethods = "verifyIncidentCreationForFullView")
 	public void verifyMyGroupsFullView() throws InterruptedException {
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 		logger.info("SelfServiceTest - verifyMyGroupsFullView");
-		logger.info("**********************************************");
+		logger.info("********************************************");
 
 		homepg.clickOnMyGroupsFull_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -942,11 +950,12 @@ public class FastAndFullViewTest extends BaseTest {
 	 * Views :Test Case No-17. Verify All - Full module.
 	 * 
 	 */
+
 	@Test(priority = 17, dependsOnMethods = "verifyIncidentCreationForFullView")
 	public void verifyAllFullView() throws InterruptedException {
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 		logger.info("SelfServiceTest - verifyAllFullView");
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 
 		homepg.clickOnAllFull_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -998,12 +1007,13 @@ public class FastAndFullViewTest extends BaseTest {
 	 * Views :Test Case No-18. Verify Resolved - Full module.
 	 * 
 	 */
+
 	@Test(priority = 18, dependsOnMethods = "verifyIncidentCreationForFullView")
 	public void verifyResolvedFullView() throws InterruptedException {
 
 		logger.info("**********************************************");
 		logger.info("SelfServiceTest - verifyResolvedFullView");
-		logger.info("**********************************************");
+		logger.info("*********************************************");
 
 		homepg.clickOnOpenIncidentFull_Button();
 		homepg.gethelponincdntfrm.switchToDefaultiFrame();
@@ -1151,6 +1161,130 @@ public class FastAndFullViewTest extends BaseTest {
 
 		// Final Verification
 		test.log(LogStatus.PASS, "Validation for Closed Full is Successful.");
+		ToolUtils.captureScreenshot(driver, test);
+		logger.info("Test case end----------------------------------------------------------------------------");
+	}
+
+	/**
+	 * Views :Test Case No-20. Verify Open Unassigned - Full module.
+	 * 
+	 */
+	@Test(priority = 20)
+	public void verifyOpenUnassignedForFullView() throws InterruptedException {
+		logger.info("*********************************");
+		logger.info("SelfServiceTest - verifyOpenUnassignedForFullView");
+		logger.info("*********************************");
+
+		homepg.expandTopMenu("Incident");
+		homepg.expandTopMenu("Full View");
+		homepg.fastAndFullView.click(homepg.fastAndFullView.createNewFast_Link);
+		homepg.fastAndFullView.switchToDefaultiFrame();
+		incidentNumber = homepg.createIncidentFrame.getIncidentNumberText();
+		homepg.createIncidentFrame.setRequestFor(prop.getProperty("requestFor"));
+		homepg.createIncidentFrame.selectOption(homepg.createIncidentFrame.category, prop.getProperty("catagory"));
+		homepg.createIncidentFrame.setShortDescription(prop.getProperty("shortDescription"));
+		homepg.createIncidentFrame.selectOption(homepg.createIncidentFrame.subCategory,
+				prop.getProperty("subCategory"));
+		homepg.createIncidentFrame.setImpactValue();
+		homepg.createIncidentFrame.setUrgencyValue();
+		homepg.createIncidentFrame.setAssignedToValue(prop.getProperty("assignedToValueOtherUser"));
+		homepg.createIncidentFrame.selectBusinessService(prop.getProperty("busSer"));
+		Thread.sleep(4000);
+		homepg.createIncidentFrame.selectOption(homepg.createIncidentFrame.typeOfIssue,
+				prop.getProperty("typeOfIssue"));
+		Thread.sleep(2000);
+		homepg.gethelponincdntfrm.contextClick();
+		homepg.gethelponincdntfrm.click(homepg.gethelponincdntfrm.saveContextBtn);
+		homepg.clickOnOpenUnAssignedToMeFull_Button();
+		homepg.gethelponincdntfrm.switchToDefaultiFrame();
+		homepg.gethelponincdntfrm.click(homepg.gethelponincdntfrm.allLink);
+		homepg.gethelponincdntfrm.searchIncidentNumber(incidentNumber,
+				homepg.gethelponincdntfrm.incidentNumberSearchBox);
+		homepg.gethelponincdntfrm.pressEnterUsingKeyboardKey();
+		homepg.gethelponincdntfrm.clickOnSearchedIncident();
+		Thread.sleep(3000);
+		homepg.gethelponincdntfrm.switchToDefaultiFrame();
+		Assert.assertEquals(homepg.createIncidentFrame.assignedTo.getAttribute("value"),
+				prop.getProperty("assignedToValueOtherUser"));
+		Assert.assertTrue(homepg.gethelponincdntfrm.incNo_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.reqFor_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.opened_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.state_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.watchList_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.shortDesc_lbl.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.assignGroup_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.assignTo_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.serOrg_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.impact_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.urgency_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.priority_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.description_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.shortDesc_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.subCate_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.category_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.typeOfIssue_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.confItem_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.bussServ_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.company_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.contactType_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.notes_Tab.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.timespampAndAttachment_Tab.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.relatedRecords_Tab.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.closureInfo_Tab.isDisplayed());
+
+		// Final Verification
+		test.log(LogStatus.PASS, "Validation for OPne UnAssigned for Fast-View is Successful.");
+		ToolUtils.captureScreenshot(driver, test);
+		logger.info("Test case end----------------------------------------------------------------------------");
+	}
+
+	/**
+	 * Views :Test Case No-21. Verify My Groups - Unassigned for Full view.
+	 * 
+	 * @throws InterruptedException
+	 */
+
+	@Test(priority = 21)
+	public void verifyMyGroupUnAssignedFullView() throws InterruptedException {
+		logger.info("*********************************");
+		logger.info("SelfServiceTest - verifyMyGroupUnAssignedFullView");
+		logger.info("*********************************");
+
+		homepg.clickOnOpenGroupsUnAssignedFull_Button();
+		homepg.gethelponincdntfrm.switchToDefaultiFrame();
+		homepg.gethelponincdntfrm.clickOnSearchedIncident();
+		Thread.sleep(3000);
+		homepg.fastAndFullView.switchToDefaultiFrame();
+		Assert.assertEquals(homepg.fastAndFullView.assignToFastFull_Link.getAttribute("value"), "");
+		Assert.assertTrue(homepg.gethelponincdntfrm.incNo_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.reqFor_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.opened_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.state_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.watchList_lbl.isDisplayed());
+		Assert.assertTrue(homepg.gethelponincdntfrm.shortDesc_lbl.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.subState_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.assignGroup_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.assignTo_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.serOrg_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.impact_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.urgency_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.priority_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.workNoteGroup_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.workNote_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.watchGroup_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.watchList_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.description_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.shortDesc_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.subCate_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.category_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.typeOfIssue_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.confItem_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.bussServ_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.company_Link.isDisplayed());
+		Assert.assertTrue(homepg.fastAndFullView.contactType_Link.isDisplayed());
+
+		// Final Verification
+		test.log(LogStatus.PASS, "Validation for My Groups - UnAssigned for Full-View is Successful.");
 		ToolUtils.captureScreenshot(driver, test);
 		logger.info("Test case end----------------------------------------------------------------------------");
 	}

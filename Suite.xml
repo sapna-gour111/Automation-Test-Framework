@@ -5,9 +5,9 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="Language" value="English"></parameter>
 		<classes>
-			<!-- <class name="com.servicenow.testscripts.ServiceOutageTest" /> -->
-			<!-- <class name="com.servicenow.testscripts.OrderGuidesTest" /> --> 
-			<!-- <class name="com.servicenow.testscripts.RegressionTest" /> -->
+			<class name="com.servicenow.testscripts.ServiceOutageTest" />
+			<class name="com.servicenow.testscripts.OrderGuidesTest" /> 
+			<class name="com.servicenow.testscripts.RegressionTest" />
 			<class name="com.servicenow.testscripts.FastAndFullViewTest" />
 			
 		</classes>

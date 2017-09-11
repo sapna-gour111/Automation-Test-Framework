@@ -20,6 +20,10 @@ public class FastAndFullView extends IFrameBase {
 	@FindBy(xpath = "//ul[@id='collapseId14']/li[2]/a")
 	public WebElement assignToMeFast_Link;
 
+	// View -> Assigned to field
+	@FindBy(id = "sys_display.original.incident.assigned_to")
+	public WebElement assignToFastFull_Link;
+
 	// View -> Modules available under Fast View
 	@FindBy(xpath = "//ul[@id='collapseId14']/li[3]/a")
 	public WebElement openFast_Link;
